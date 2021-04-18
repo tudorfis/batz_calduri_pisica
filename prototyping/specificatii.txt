@@ -1,0 +1,32 @@
+SCOP:
+Cand pisica e in calduri si incepe sa miaune 
+batul incepe sa se miste sa-i distraga atentia
+
+BRAINSTORM ( requirements )
+- laptop si IDE
+- Arduino board
+- wifi board
+- battery pack
+- senzor de miscare ( pt cand se apropie de ata sa o traga )
+- senzor de calduri pisica lol
+- probabil microfon si AI care detecteaza sunete de calduri pisica
+- bread board pt conectat fire
+- sg90 servo motor
+- 3d printed encasing
+- suport de prindere sa nu o darame
+- bat cu ata de la pepco
+
+MVP
+- doar arduino si cod ca sa misti manual batu cu ata
+- soft sa miste cu delay eventual batu
+- servo motor si delay la el
+
+ALGORITHM
+- setup servo
+- setup incrementValue
+- loop the following:
+- analogWrite( servoPin, offsetValue )
+- offsetValue increase
+- check if bigger than threshold ( 90 for servo )
+- reverse the offsetValue ( reverse it's sign )
+- repeat
